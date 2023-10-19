@@ -1,28 +1,28 @@
-float sum(float a, float b) // сумма
+float sum(float a, float b) 
 {
 	float return0; return0 = a + b;
 	return return0;
 }
 
-float min(float a, float b) // разность
+float min(float a, float b) 
 {
 	float return0; return0 = a - b;
 	return return0;
 }
 
-float mult(float a, float b) // произведение
+float mult(float a, float b) 
 {
 	float return0; return0 = a * b;
 	return return0;
 }
 
-float divv(float a, float b) // частное
+float divv(float a, float b) 
 {
 	float return0; return0 = a / b;
 	return return0;
 }
 
-long int poww(long int a, unsigned int n) //степень
+long int poww(long int a, unsigned int n) 
 {
 	long int res = 1;
 	for(int i = 0; i<n; i++)
@@ -32,7 +32,7 @@ long int poww(long int a, unsigned int n) //степень
 	return res;
 }
 
-float abss(float a) //Возвращает абсолютную величину целого числа 
+float abss(float a) 
 {
 	if(a>0)
 	{
@@ -45,20 +45,14 @@ float abss(float a) //Возвращает абсолютную величину
 	}
 }
 
-int sqrtt(int x) // кв. корень
-{
-	//эта функция долэна находить кв. корень
-	//надо доделать
-}
-
-float truncc(float y) // отбрасывание дробной части 
+float truncc(float y)
 {
 	int x = y;
 	return x;
 }
 
 
-float ffmax(float a, float b) // наибольшее значение среди x и y 
+float ffmax(float a, float b) 
 {
 	if(a > b)
 	{
@@ -83,7 +77,7 @@ float ffmin(float a, float b) // наименьшее значение сред�
 }
 
 
-float dim(float x, float y) // вычисление положительной разницы между x и y
+float dim(float x, float y) 
 {
 	float res; res = x - y;
 	if(res < 0)
@@ -92,7 +86,7 @@ float dim(float x, float y) // вычисление положительной �
 		{return res;}
 }
 
-float _exp2(float x) // значение числа 2, возведённого в степень x 
+float _exp2(float x)
 {
 	float res = 1;
 	for(int i = 0; i<x; i++)
@@ -102,7 +96,7 @@ float _exp2(float x) // значение числа 2, возведённого 
 	return res;
 }
 
-float cpsg(float x, float y) // возвращает величину, абсолютное значение которой равно x, но знак которой соответствует знаку y 
+float cpsg(float x, float y) 
 {
 	float res = 0;
 	if(y<0)
@@ -116,7 +110,7 @@ float cpsg(float x, float y) // возвращает величину, абсо�
 	return res;
 }
 
-double _exp(float x) // вычисление экспоненты(число e в степени x)
+double _exp(float x) 
 {
 	double e = 2.71828182845904;
 	double res = 1;
@@ -124,5 +118,17 @@ double _exp(float x) // вычисление экспоненты(число e �
 	{
 		res *= e;
 	}
+	return res;
+}
+
+int bisector(int a) 
+{
+	int res; res = a / 2;
+	return res;
+}
+
+int bisector_(int a) // нахождение угла от биссектрисы
+{
+	int res; res = a * 2;
 	return res;
 }
