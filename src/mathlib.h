@@ -1,25 +1,21 @@
 float sum(float a, float b) 
 {
-	float return0; return0 = a + b;
-	return return0;
+	return a + b;
 }
 
 float min(float a, float b) 
 {
-	float return0; return0 = a - b;
-	return return0;
+	return a - b;
 }
 
 float mult(float a, float b) 
 {
-	float return0; return0 = a * b;
-	return return0;
+	return a * b;
 }
 
 float divv(float a, float b) 
 {
-	float return0; return0 = a / b;
-	return return0;
+	return a / b;
 }
 
 long int poww(long int a, unsigned int n) 
@@ -98,16 +94,14 @@ float _exp2(float x)
 
 float cpsg(float x, float y) 
 {
-	float res = 0;
 	if(y<0)
 	{
-		res = x*-1;
+		return x * -1;
 	}
 	else
 	{
-		res = x;
+		return x;
 	}
-	return res;
 }
 
 double _exp(float x) 
@@ -123,12 +117,10 @@ double _exp(float x)
 
 int bisector(int a) 
 {
-	int res; res = a / 2;
-	return res;
+	return a / 2:
 }
 
 int bisector_(int a) // нахождение угла от биссектрисы
 {
-	int res; res = a * 2;
-	return res;
+	return a * 2;
 }
