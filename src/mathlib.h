@@ -60,7 +60,7 @@ float ffmax(float a, float b)
 	}
 }
 
-float ffmin(float a, float b) // наименьшее значение среди x и y 
+float ffmin(float a, float b) 
 {
 	if(a < b)
 	{
@@ -120,7 +120,7 @@ int bisector(int a)
 	return a / 2:
 }
 
-int bisector_(int a) // нахождение угла от биссектрисы
+int bisector_(int a) 
 {
 	return a * 2;
 }
